@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div id="app" class="container">
+    <header class="mb-8">
+      <h1>Lista Zadań</h1>
+    </header>
+    
+    <div class="bg-white">
+      <form id="todo-form">
+        <input 
+          type="text" 
+          id="todo-input" 
+          placeholder="Wpisz nowe zadanie..."
+          required
+        />
+        <button 
+          type="submit"
+          class="bg-blue-600"
+        >
+          Dodaj
+        </button>
+      </form>
+    </div>
+
+    <div class="bg-white">
+      <div id="stats"></div>
+      <div id="table-wrapper"></div>
+    </div>
+
+    <div class="flex justify-center gap-3">
+      <button 
+        id="clear-completed"
+        class="bg-red-500"
+      >
+        Usuń ukończone
+      </button>
+      <button 
+        id="filter-all"
+        class="bg-gray-600"
+      >
+        Wszystkie
+      </button>
+      <button 
+        id="filter-active"
+        class="bg-gray-600"
+      >
+        Aktywne
+      </button>
+      <button 
+        id="filter-completed"
+        class="bg-gray-600"
+      >
+        Ukończone
+      </button>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

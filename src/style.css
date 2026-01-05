@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+.todo-checkbox {
+  @apply w-5 h-5 cursor-pointer accent-blue-600;
+}
+
+.todo-completed {
+  @apply line-through text-gray-400;
+}
+
+.delete-btn {
+  @apply px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition-colors text-sm;
+}
+
+.todo-table-cell {
+  @apply px-4 py-2 align-middle;
+}
+
+body {
+  @apply bg-gray-50 min-h-screen;
+}
+
+#app {
+  @apply max-w-4xl mx-auto px-4 py-8;
+}
+
+h1 {
+  @apply text-4xl font-bold text-gray-800 text-center;
+}
+
+form {
+  @apply flex gap-3;
+}
+
+#todo-input {
+  @apply flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none;
+}
+
+#todo-input:focus {
+  @apply ring-2 ring-blue-500;
+}
+
+button {
+  @apply px-6 py-2 rounded-lg font-medium transition-colors;
+}
+
+button:hover {
+  @apply cursor-pointer;
+}
+
+button.bg-blue-600 {
+  @apply bg-blue-600 text-white;
+}
+
+button.bg-blue-600:hover {
+  @apply bg-blue-700;
+}
+
+button.bg-red-500 {
+  @apply bg-red-500 text-white;
+}
+
+button.bg-red-500:hover {
+  @apply bg-red-600;
+}
+
+button.bg-gray-600 {
+  @apply bg-gray-600 text-white;
+}
+
+button.bg-gray-600:hover {
+  @apply bg-gray-700;
+}
+
+#stats {
+  @apply text-gray-600 text-sm mb-4;
+}
+
+#table-wrapper {
+  @apply overflow-x-auto;
+}
+
+.bg-white {
+  @apply bg-white rounded-lg shadow-md p-6 mb-6;
+}
